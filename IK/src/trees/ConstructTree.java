@@ -44,7 +44,25 @@ public class ConstructTree {
 	}
 
 	private Node constructTree(int[] inOrder, int[] preOrder, int inStart, int inEnd, Index postIndex2) {
+         if(start> end) {
+        	 return null;
+         }
          
+         Node node = new Node();
+         if(start== end) {
+        	 
+         }
+         
+         
+	}
+	
+	private static int search(int[] inOrder, int start, int end, int val) {
+	    int i;
+	    for(i=start;i<=end;i++){
+	        if(inOrder[i]==val)
+	            break;
+	    }
+	    return i;
 	}
 
 }
